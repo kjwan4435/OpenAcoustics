@@ -1,3 +1,5 @@
+#  (c) 2025, KAIST, WIT_LAB, Jiwan Kim (jiwankim@kaist.ac.kr, kjwan4435@gmail.com)
+
 import os
 import socket
 import socketserver
