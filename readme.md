@@ -50,5 +50,22 @@ Detailed explanation of each modes will be followed.
 ## Multimodal sensing support
 Provides optional motion data capture using built-in IMU sensors, allowing synchronized collection with audio signals. 
 
+The provided .ino Arduino code, it contains <LSM6DS3.h> library for the IMU data collection as an example, and the IMU data is saved in 19 byte array packet for the BLE UART. This portion of the code can be easily modfided depending on which sensor you are using(e.g., temperature sensor, light sensor)
+
 ## Real-time transmission
 Supports both real-time streaming and buffered transmission to mitigate data loss during wireless transfer.
+
+1. real-time streaming : Data capturing and transmission is processed simulteneously on the MCU board.
+2. buffered transmission : Data capturing and transmission processes are carried out separately. When the MCU receives initiation signal from central device(e.g., computer website), it starts to capture data and store it to MCU's RAM during predefined time duration. After the data collection is terminated, MCU transmits stored data through BLE UART.
+
+## User manual for .html file utilization
+The website which is designed with provided .html file is composed of toal 4 steps.
+
+1. BLE device connection establishment
+2. Choose data transmission mode
+3. Start/Stop record
+4. Check/download the received data
+
+In the step 3, IMU_ONLY, PDM_ONLY, IMU_PDM Async, IMU_PDM Sync modes are real-time streaming system, but Batch mode is not. Therefore, real-time streaming mode and batch mode uses different recording control button, start recording, and batch record respectively. Currently, batch recording time is adjusted to 2 seconds, but it can be modified in the .ino Arduino code's "batch_recording_time" variable. The maximum value of "batch_recording_time" is 4 sec, but it can be differ by the size of MCU's RAM memory.
+
+ 
