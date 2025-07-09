@@ -68,4 +68,6 @@ The website which is designed with provided .html file is composed of toal 4 ste
 
 In the step 3, IMU_ONLY, PDM_ONLY, IMU_PDM Async, IMU_PDM Sync modes are real-time streaming system, but Batch mode is not. Therefore, real-time streaming mode and batch mode uses different recording control button, start recording, and batch record respectively. Currently, batch recording time is adjusted to 2 seconds, but it can be modified in the .ino Arduino code's "batch_recording_time" variable. The maximum value of "batch_recording_time" is 4 sec, but it can be differ by the size of MCU's RAM memory.
 
- 
+In the step 3 of batch mode, visual feedback is implemented in order to notify the current status of data transmission to the users. For the safe and reliable data collection, "batch record" button should be pressed only when the STANBY green light is changed to deep green.
+
+![visual_feedback](visual_feedback.png)
