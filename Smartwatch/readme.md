@@ -33,3 +33,13 @@ subXXXX_MMDD_HHNNSS
 ├──XXXX_MMDD_HHNNSS.csv (sensor data)
 └──audioYYY.wav (audio data)
 ```
+
+## Hyperparameters
+Users can adjust hyperparameters in 'Utilities.java' file for customization.
+```
+static public String IP = "192.168.0.69";            // TCP server IP address
+static public String SUB_ID = "0";                   // subject ID
+static public int RecordingTime = 10;                // recording time in seconds (default 10 seconds)
+static public boolean IsRecordingIMU = false;        // convert to 'true' if you want to record IMU
+static public boolean IsRealtimeStreaming = false;   // convert to 'true' if you want to do real-time streaming audio data
+```
