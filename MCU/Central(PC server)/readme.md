@@ -1,13 +1,3 @@
-## Publications
-If you use this code in your reseach, please cite our open-source project: 
-```
-@inproceedings{OpenAcoustics_25_Kim,
-author = {Kim, Jiwan and Jung, Hohurn and Oakley, Ian},
-title = {OpenAcoustics: An Open-Source Framework for Acoustic Data Capture on Smart Devices and Microcontrollers},
-year = {2025},
-}
-```
-
 In the provided .html file, there exists 5 different modes in transmission.
 
 * `IMU_ONLY` : real-time streaming of IMU data only
