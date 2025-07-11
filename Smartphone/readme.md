@@ -1,15 +1,5 @@
 # OpenAcoustics_phone
 
-## Publications
-If you use this code in your reseach, please cite our open-source project:  
-```
-@inproceedings{OpenAcoustics_25_Kim,
-author = {Kim, Jiwan and Jung, Hohurn and Oakley, Ian},
-title = {OpenAcoustics: An Open-Source Framework for Acoustic Data Capture on Smart Devices and Microcontrollers},
-year = {2025},
-}
-```
-
 ## Android Studio Project Installation
 1. Please open the OpenAcousticsPhone folder using Android studio. 
 2. Connect smartphone using adb tools, over Wi-Fi recommended (https://developer.android.com/training/wearables/get-started/debugging)
