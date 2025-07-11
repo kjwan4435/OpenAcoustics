@@ -54,4 +54,4 @@ For the safe and reliable data collection, `batch record` button should be press
 
 ## 4. Check/download the received data
 
-After the recording process is finished, verifing and downloading data is also possible. By pressing 'Play Sound` button, the most recently recorded audio file will be played. `Download Data` button enables download of audio file amd IMU data as .wav file and .csv file, respectively.
+After the recording process is finished, verifing and downloading data is also possible. By pressing `Play Sound` button, the most recently recorded audio file will be played. `Download Data` button enables download of audio file amd IMU data as .wav file and .csv file, respectively.
