@@ -17,6 +17,7 @@ Three external library was used for our BLE data transmission project.
 * `<PDM.h>` : Enables PDM microphone data capture
   * Please check whether your board supports PDM microphone library.
 * `<LSM6DS3.h>` : Library related to IMU data collection
+  * This library is included for the multimodal sensing support. If you want to use your own sensor(temperature, light, etc), you can chage this library to another.
   
 
 
@@ -43,3 +44,12 @@ Tools > Boards > Seeed nRF52 Boards > XIAO nRF52840 Sense (O)
 Tools > Boards > Seeed nRF52 mbed-enabled Boards > XIAO nRF52840 Sense (X)
 ```
 
+As we mensioned in the section PC server, batch recording mode is currently records the PDM & IMU data for only 2 seconds. In order to change this time duration, change the value of variable `batch_recording_time` that defined in line 53.
+```
+int batch_recording_time = 2000; // change this value to change the recording time in the BATCH mode (unit: ms)
+```
+
+Right below of the definition `batch_recording_time`, the varible `batch_time_duration_max` indicates the maximum time duration of batch recording. Currently it's value is set to 4 sec, but if your board has larger RAM memory size, it is possible to increase value and enables of recording bigger length of audio data. 
+```
+const int batch_time_duration_max = 4; // maximum time for transmitting batched information (unit: s)
+```
