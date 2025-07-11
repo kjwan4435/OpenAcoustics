@@ -1,15 +1,5 @@
 # OpenAcoustics
 
-## Publications
-If you use this code in your reseach, please cite our open-source project: 
-```
-@inproceedings{OpenAcoustics_25_Kim,
-author = {Kim, Jiwan and Jung, Hohurn and Oakley, Ian},
-title = {OpenAcoustics: An Open-Source Framework for Acoustic Data Capture on Smart Devices and Microcontrollers},
-year = {2025},
-}
-```
-
 ## ![example_platforms](example_platforms.png)    
  OpenAcoustics support following platforms and more. (A) Smartphones (left to right: Samsung Galaxy S24, Motorola Edge 40, and Xiaomi Redmi Note 12 Pro), (B) Smartwatches (Samsung Galaxy Watch 7, Google Pixel Watch 3, and Xiaomi Watch Pro 2), and (C) MCUs (XIAO nRF52840 Sense and Adafruit Feather nRF52840 Sense)
 
