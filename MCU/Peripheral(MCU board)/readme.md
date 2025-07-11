@@ -7,19 +7,7 @@ title = {OpenAcoustics: An Open-Source Framework for Acoustic Data Capture on Sm
 year = {2025},
 }
 ```
-Three external library was used for our BLE data transmission project.
-
-* `<bluefruit.h>` : Fundamental library for BLE communication
-  * Refer below link for the installation of the library.
-    ```
-    https://github.com/adafruit/Adafruit_nRF52_Arduino/tree/master
-    ```
-* `<PDM.h>` : Enables PDM microphone data capture
-  * Please check whether your board supports PDM microphone library.
-* `<LSM6DS3.h>` : Library related to IMU data collection
-  * This library is included for the multimodal sensing support. If you want to use your own sensor(temperature, light, etc), you can chage this library to another.
-  
-
+## Supported Boards 
 
 Our transmission system basically uses <bluefruit.h> library which is a part of Adafruit’s Bluefruit nRF52 Libraries, and it only supports Adafruit boards based on the Nordic nRF52 chipset. Thus our system supports boards which are listed below.
 * Adafruit Feather nRF52832
@@ -43,6 +31,22 @@ Tools > Boards > Seeed nRF52 Boards > XIAO nRF52840 Sense (O)
 ```
 Tools > Boards > Seeed nRF52 mbed-enabled Boards > XIAO nRF52840 Sense (X)
 ```
+
+## Library installation
+
+Three external library was used for our BLE data transmission project.
+
+* `<bluefruit.h>` : Fundamental library for BLE communication
+  * Refer below link for the installation of the library.
+    ```
+    https://github.com/adafruit/Adafruit_nRF52_Arduino/tree/master
+    ```
+* `<PDM.h>` : Enables PDM microphone data capture
+  * Please check whether your board supports PDM microphone library.
+* `<LSM6DS3.h>` : Library related to IMU data collection
+  * This library is included for the multimodal sensing support. If you want to use your own sensor(temperature, light, etc), you can chage this library to another.
+
+## Additional explanation for parameters
 
 As we mensioned in the section PC server, batch recording mode is currently records the PDM & IMU data for only 2 seconds. In order to change this time duration, change the value of variable `batch_recording_time` that defined in line 53.
 ```
