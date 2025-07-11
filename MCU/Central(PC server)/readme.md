@@ -26,7 +26,7 @@ Currently, the name of the service is `XIAO nRF52840 Sense`, but this service na
 After the BLE connection is established, you should choose the data transfer mode to initiate the data collection service.
 By pressing each button, the data transfer mode will be changed immediately, and the small black circle will indicates the current mode you are using.
 
-![mode&indicator](mode&indicator.png)
+<img src="mode&indicator.png" width="200" height="200"/>
 
 ## 3. Start/Stop record
 
@@ -40,7 +40,7 @@ In the step 3 of batch mode, visual feedback is implemented in order to notify t
   
 For the safe and reliable data collection, `batch record` button should be pressed only when the STANBY green light is changed to deep green.
 
-![visual_feedback](visual_feedback.png)
+<img src="visual_feedback.png" width="200" height="200"/>
 
 ## 4. Check/download the received data
 
