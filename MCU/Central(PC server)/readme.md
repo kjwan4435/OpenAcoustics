@@ -7,7 +7,7 @@ In the provided .html file, there exists 5 different modes in transmission.
 * `Batch` : buffered data transmission.
 
 # User manual for .html file utilization
-The website which is designed with provided .html file is composed of toal 4 steps. These steps are distinguisted with white rectangular boxes, so it is straight forward to find each steps.
+The website which is designed with provided .html file is composed of total 4 steps. These steps are distinguisted with white rectangular boxes, so it is straight forward to find each steps.
 
 ## 1. BLE device connection establishment
 
@@ -19,12 +19,14 @@ In this process, the BLE service name that advertised by MCU board should be exa
 myBLE.connect(serviceUUID, "XIAO nRF52840 Sense", gotCharacteristics);
 ```
 
-Currently, the name of the service is `XIAO nRF52840 Sense`, but this service name can be changed if you are using another MCU board. Then, use nRF connect application on your mobile phone to check the BLE service name of your MCU board. 
+Currently, the name of the service is `XIAO nRF52840 Sense`, but this service name can be changed if you are using another MCU board. Then, use "nRF connect" mobile application on your cell phone to check the BLE service name of your MCU board. 
 
 ## 2. Choose data transmission mode
 
 After the BLE connection is established, you should choose the data transfer mode to initiate the data collection service.
-By pressing each button, the data transfer mode will be changed immediately, and the small black circle will indicates the current mode you are using.
+By pressing each button, the data transfer mode will be changed immediately, and the button's color will be changed to blue when each mode is activated. Besides, each mode's brief explanation is provided at the bottom side of the button. 
+
+Below image shows the case when "Batch mode" is activated, and brief explanation of the mode is appeared on the below of the button.
 
 <img src="mode&indicator.png" width="200" height="200"/>
 
@@ -38,7 +40,9 @@ In the step 3 of batch mode, visual feedback is implemented in order to notify t
 * `RECORDING(RED)` : MCU board collects data & save it to its RAM memory.
 * `RECEIVING(BLUE)` : MCU board is sending collected data to central device(PC).
   
-For the safe and reliable data collection, `batch record` button should be pressed only when the STANBY green light is changed to deep green.
+For the safe and reliable data collection, `batch record` button should be pressed only when the STANBY green icon is appeared on the screen.
+
+Below images shows each state's icon.
 
 <img src="visual_feedback.png" width="200" height="200"/>
 
