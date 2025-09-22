@@ -28,7 +28,7 @@ By pressing each button, the data transfer mode will be changed immediately, and
 
 Below image shows the case when "Batch mode" is activated, and brief explanation of the mode is appeared on the below of the button.
 
-<img src="mode&indicator.png" width="200" height="200"/>
+<img src="step2.png" width="200" height="400"/>
 
 ## 3. Start/Stop record
 
@@ -44,7 +44,7 @@ For the safe and reliable data collection, `batch record` button should be press
 
 Below images shows each state's icon.
 
-<img src="visual_feedback.png" width="200" height="200"/>
+<img src="step3_standby.png" width="200" height="300"/> <img src="step3_recording.png" width="195" height="300"/> <img src="step3_sending.png" width="190" height="250"/>
 
 ## 4. Check/download the received data
 
