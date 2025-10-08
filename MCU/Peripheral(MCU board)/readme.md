@@ -1,12 +1,4 @@
-## Publications
-If you use this code in your reseach, please cite our open-source project: 
-```
-@inproceedings{OpenAcoustics_25_Kim,
-author = {Kim, Jiwan and Jung, Hohurn and Oakley, Ian},
-title = {OpenAcoustics: An Open-Source Framework for Acoustic Data Capture on Smart Devices and Microcontrollers},
-year = {2025},
-}
-```
+
 ## Supported Boards 
 
 Our transmission system basically uses <bluefruit.h> library which is a part of Adafruit’s Bluefruit nRF52 Libraries, and it only supports Adafruit boards based on the Nordic nRF52 chipset. Thus our system supports boards which are listed below.
