@@ -28,5 +28,6 @@ Supports both real-time streaming and buffered transmission to mitigate data los
 2. buffered transmission : Data capturing and transmission processes are carried out separately. When the MCU receives initiation signal from central device(e.g., PC server), it starts to capture data and store it to MCU's RAM during predefined time duration. After the data collection is terminated, MCU transmits stored data through BLE UART.
 
 ## Contact
-If you have a question about using our program or our work helps in your work, please let us know or cite [our paper](https://dl.acm.org/doi/10.1145/3714394.3756156)
+If you have a question about using our program or our work helps in your work, please let us know or cite [our paper](https://dl.acm.org/doi/10.1145/3714394.3756156).
+
 Email: kjwan4435@gmail.com
