@@ -1,5 +1,9 @@
 # OpenAcoustics
 
+OpenAcoustics is an open-source system for capturing acoustic data on off-the-shelf smart devices and microcontroller units (MCUs), including smartphones, smartwatches, and embedded controllers. Our system offers real-time audio recording, configurable sampling pipelines, and wireless streaming over BLE UART or Wi-Fi.
+
+For more details, please check [our paper](https://dl.acm.org/doi/10.1145/3714394.3756156) presented at UbiComp-ISWC'25 Beyond Sound Workshop.
+
 ## ![example_platforms](example_platforms.png)    
  OpenAcoustics support following platforms and more. (A) Smartphones (left to right: Samsung Galaxy S24, Motorola Edge 40, and Xiaomi Redmi Note 12 Pro), (B) Smartwatches (Samsung Galaxy Watch 7, Google Pixel Watch 3, and Xiaomi Watch Pro 2), and (C) MCUs (XIAO nRF52840 Sense and Adafruit Feather nRF52840 Sense)
 
@@ -22,3 +26,7 @@ Supports both real-time streaming and buffered transmission to mitigate data los
 
 1. real-time streaming : Data capturing and transmission is processed simulteneously on the MCU board.
 2. buffered transmission : Data capturing and transmission processes are carried out separately. When the MCU receives initiation signal from central device(e.g., PC server), it starts to capture data and store it to MCU's RAM during predefined time duration. After the data collection is terminated, MCU transmits stored data through BLE UART.
+
+## Contact
+If you have a question about using our program or our work helps in your work, please let us know or cite [our paper](https://dl.acm.org/doi/10.1145/3714394.3756156)
+Email: kjwan4435@gmail.com
